@@ -144,4 +144,13 @@ a {
 
 input {
   padding: 5px;
+  border-radius: 5px;
+}
+
+input:invalid {
+  border: red 3px solid;
+}
+
+input:valid {
+  border: green 3px solid;
 }

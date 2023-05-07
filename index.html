@@ -25,18 +25,18 @@
       <h1>For a Better Future</h1>
       <h3>The safest form of travel throughout the galaxy, because you matter</h3>
     </div>
-    <form action = "data.txt" method="post">
+    <form action = "index.html" method="post">
       <div class = "form-input">
         <h2 class = 'form-title'>Sign Up</h2>
         <fieldset>
           <legend>Name</legend>
           <div>
           <label for = "firstName">First Name </label>
-          <input type = "text" name = "firstName" id = "firstName" placeholder="Margaret" required>
+          <input type = "text" name = "firstName" id = "firstName" placeholder="Margaret" pattern = "[A-Za-z]+" title = "This field may only contain letters" maxlength="15" required>
           </div>
           <div>
           <label for = "lastName">Last Name </label>
-          <input type = "text" name = "lastName" id = "lastName" placeholder="Hamilton" required>
+          <input type = "text" name = "lastName" id = "lastName" placeholder="Hamilton" pattern = "[A-Za-z]+" title = "This field may only contain letters" maxlength="15" required>
           </div>
         </fieldset>
         <fieldset>
@@ -47,18 +47,18 @@
           </div>
           <div>
           <label for = "phone">Phone Number </label>
-          <input type = "tel" name = "phone" id = "phone" placeholder="(123) 456-7890">
+          <input type = "tel" name = "phone" id = "phone" minlength="7" maxlength="15" pattern="[0-9]+" title = "This field may only contain numbers" placeholder="(123) 456-7890">
           </div>
         </fieldset>
         <fieldset>
           <legend>Password</legend>
           <div>
           <label for = "password">Password </label>
-          <input type = "password" id = "password" name = "password" required>
-          </div>
+          <input type = "password" id = "password" name = "password" minlength="8" required>
+          </div> 
           <div>
           <label for = "confirmedPassword">Confirm Password </label>
-          <input type = "password" id = "confirmedPassword" name = "confirmedPassword" required>
+          <input type = "password" id = "confirmedPassword" name = "confirmedPassword" minlength="8" required>
           </div>
         </fieldset>
       </div>
