@@ -60,7 +60,7 @@ body {
   height: 100vh;
   width: 55vw;
   color: white;
-  gap: 75px;
+  gap: 30px;
 }
 
 
@@ -69,6 +69,10 @@ body {
   align-items: center;
   flex-direction: column;
   color: white;
+}
+
+.form-text div {
+  text-align: center;
 }
 .form-title {
   margin: 10px 0px 0px 0px;
