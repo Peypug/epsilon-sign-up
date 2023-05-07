@@ -21,11 +21,48 @@
   </div>
 
   <div class = "form">
-    <h2>for a better future</h1>
-
+    <h1>Epsilon <span>For a Better Future</span></h1>
+    <h3>Convient space travel throughout the galaxy. The safest human space transportation. Because you matter.</h3>
     <form action = "data.txt" method="post">
-      <input type = "text">
+      <div class = "form-input">
+        <h2>Sign Up</h2>
+        <fieldset>
+          <legend>Name</legend>
+          <div>
+          <label for = "firstName">First Name: </label>
+          <input type = "text" name = "firstName" id = "firstName" placeholder="Margaret">
+          </div>
+          <div>
+          <label for = "lastName">Last Name: </label>
+          <input type = "text" name = "lastName" id = "lastName" placeholder="Hamilton">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div>
+          <label for = "email">Email: </label>
+          <input type = "email" name = "email" id = "email" placeholder="ToInfinityAndBeyond@Gmail.com">
+          </div>
+          <div>
+          <label for = "phone">Phone Number: </label>
+          <input type = "tel" name = "phone" id = "phone" placeholder="(123) 456-7890">
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Password</legend>
+          <div>
+          <label for = "password">Password: </label>
+          <input type = "password" id = "password" name = "password">
+          </div>
+          <div>
+          <label for = "confirmedPassword">Confirm Password: </label>
+          <input type = "password" id = "confirmedPassword" name = "confirmedPassword">
+          </div>
+        </fieldset>
+      </div>
+      <button type = "submit">Create Account</button>
     </form>
+    <p>Already have an account? <a href = "index.html">Log in</a></p>
 
   </div>
 </body>
