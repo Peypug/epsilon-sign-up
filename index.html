@@ -21,48 +21,52 @@
   </div>
 
   <div class = "form">
-    <h1>Epsilon <span>For a Better Future</span></h1>
-    <h3>Convient space travel throughout the galaxy. The safest human space transportation. Because you matter.</h3>
+    <div class = "form-text">
+      <h1>For a Better Future</h1>
+      <h3>The safest form of travel throughout the galaxy, because you matter</h3>
+    </div>
     <form action = "data.txt" method="post">
       <div class = "form-input">
-        <h2>Sign Up</h2>
+        <h2 class = 'form-title'>Sign Up</h2>
         <fieldset>
           <legend>Name</legend>
           <div>
-          <label for = "firstName">First Name: </label>
-          <input type = "text" name = "firstName" id = "firstName" placeholder="Margaret">
+          <label for = "firstName">First Name </label>
+          <input type = "text" name = "firstName" id = "firstName" placeholder="Margaret" required>
           </div>
           <div>
-          <label for = "lastName">Last Name: </label>
-          <input type = "text" name = "lastName" id = "lastName" placeholder="Hamilton">
+          <label for = "lastName">Last Name </label>
+          <input type = "text" name = "lastName" id = "lastName" placeholder="Hamilton" required>
           </div>
         </fieldset>
         <fieldset>
           <legend>Contact Information</legend>
           <div>
-          <label for = "email">Email: </label>
-          <input type = "email" name = "email" id = "email" placeholder="ToInfinityAndBeyond@Gmail.com">
+          <label for = "email">Email </label>
+          <input type = "email" name = "email" id = "email" placeholder="ToInfinityAndBeyond@Gmail.com" required>
           </div>
           <div>
-          <label for = "phone">Phone Number: </label>
+          <label for = "phone">Phone Number </label>
           <input type = "tel" name = "phone" id = "phone" placeholder="(123) 456-7890">
           </div>
         </fieldset>
         <fieldset>
           <legend>Password</legend>
           <div>
-          <label for = "password">Password: </label>
-          <input type = "password" id = "password" name = "password">
+          <label for = "password">Password </label>
+          <input type = "password" id = "password" name = "password" required>
           </div>
           <div>
-          <label for = "confirmedPassword">Confirm Password: </label>
-          <input type = "password" id = "confirmedPassword" name = "confirmedPassword">
+          <label for = "confirmedPassword">Confirm Password </label>
+          <input type = "password" id = "confirmedPassword" name = "confirmedPassword" required>
           </div>
         </fieldset>
       </div>
-      <button type = "submit">Create Account</button>
+      <div class = "account-complete">
+        <button type = "submit" class = "create-account">Create Account</button>
+        <p class = "login">Already have an account? <a href = "index.html">Log in</a></p>
+      </div>
     </form>
-    <p>Already have an account? <a href = "index.html">Log in</a></p>
 
   </div>
 </body>

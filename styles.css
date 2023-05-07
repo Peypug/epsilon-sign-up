@@ -16,6 +16,8 @@ body {
   margin: 0px 0px;
   background-color: black;
   color: white;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .display {
@@ -33,18 +35,22 @@ body {
 .banner {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 100px;
   width: 45vw;
   text-align: center;
   background-color: rgba(0,0,0,0.3);
-  gap: 20px;
+  column-gap: 20px;
+  height: 150px;
+  font-size: 30px;
+
 }
 
 .banner>img {
   margin-top: 20px;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .form {
@@ -53,22 +59,89 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 55vw;
-
+  color: white;
+  gap: 75px;
 }
 
+
+.form-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.form-title {
+  margin: 10px 0px 0px 0px;
+  padding: 0px;
+}
 .form-input{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: rgb(20,20,50);
+  background-color: rgb(10,10,10);
+  box-shadow: 5px rgb(20,20,20);
   width: 55vw;
   margin: 0;
+  gap: 50px;
+  color:rgb(211, 0, 105);
+  color: white;
 } 
 fieldset {
   display: flex;
   justify-content: space-evenly;
+  position: relative;
+  border: none;
+  border-top: rgb(207, 46, 46) 1px solid;
+}
+
+fieldset>div {
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  position: absolute;
+  top: -20px;
+  left: 5px;
 }
 
 .form-input>h2 {
   text-align: center;
+}
+
+.create-account {
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border:rgb(207, 46, 46) 2px solid;
+  color:rgb(207, 46, 46);
+  background-color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.create-account:hover {
+  background-color: rgb(207, 46, 46);
+  color: black;
+}
+
+.login{
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+a {
+  color:rgb(207, 46, 46);
+  text-decoration: none;
+}
+
+.account-complete { 
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  gap: 30px;
+}
+
+input {
+  padding: 5px;
 }
