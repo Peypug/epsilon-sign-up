@@ -22,14 +22,14 @@ body {
 
 .display {
   font-family: 'Orbitron', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   width: 45vw;
   position: relative;
 }
 
 .display-image img {
-  height: 100vh;
-  width: 45vw;
+  min-height: 100%;
+  width: 100%
 }
 
 .banner {
@@ -38,7 +38,7 @@ body {
   align-items: center;
   position: absolute;
   top: 100px;
-  width: 45vw;
+  width: 100%;
   text-align: center;
   background-color: rgba(0,0,0,0.3);
   column-gap: 20px;
@@ -158,3 +158,71 @@ input:invalid {
 input:valid {
   border: green 3px solid;
 }
+
+@media (max-height: 800px) {
+  body {
+    overflow: scroll;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .form,
+  .form-input,
+  form,
+  .form-text {
+    max-width: 40vw;
+  }
+  .display,
+  .display-image img,
+  .banner {
+    width: 60vw;
+  } 
+  .display,
+  .display-image img {
+    min-height: 100vh;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+  .display,
+  .display-image img,
+  .banner {
+    min-width: 100vw;
+  }
+  .display,
+  .display-image img,
+  .banner {
+    min-height: 100px;
+  }
+
+  .form,
+  .form-input,
+  form,
+  .form-text {
+    min-width: 100vw;
+  }
+  .form-input {
+    margin: 0px;
+  }
+
+  .form {
+    margin: 0px;
+    padding: 0px;
+    align-items: flex-start;
+  }
+  input {
+    width: 200px ;
+  }
+
+}
+
