@@ -169,6 +169,7 @@ input:valid {
   fieldset {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .form,
   .form-input,
@@ -200,10 +201,12 @@ input:valid {
     min-width: 100vw;
   }
   .display,
-  .display-image img,
+  .display-image,
+  .display-image>img,
   .banner {
-    min-height: 100px;
+    max-height: 100px;
   }
+
 
   .form,
   .form-input,
