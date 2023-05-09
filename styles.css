@@ -17,7 +17,7 @@ body {
   background-color: black;
   color: white;
   max-height: 100vh;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .display {
@@ -160,11 +160,6 @@ input:valid {
   border: green 3px solid;
 }
 
-@media (max-height: 800px) {
-  body {
-    overflow: scroll;
-  }
-}
 
 @media only screen and (max-width: 1200px) {
   fieldset {
